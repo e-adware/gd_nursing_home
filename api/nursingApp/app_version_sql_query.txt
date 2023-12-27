@@ -1,0 +1,14 @@
+CREATE TABLE `android_app_updates` (
+  `slno` int(11) NOT NULL,
+  `app_id` int(11) NOT NULL COMMENT '1 = Nursing',
+  `version` varchar(10) NOT NULL,
+  `date` date NOT NULL,
+  `time` time NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+ALTER TABLE `android_app_updates`
+  ADD PRIMARY KEY (`slno`);
+  
+ALTER TABLE `android_app_updates`
+  MODIFY `slno` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+COMMIT;
